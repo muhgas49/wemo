@@ -1,0 +1,1889 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.contianer{
+   
+   display: flex;
+   flex-direction: column;
+   
+    /* background-image: linear-gradient(to top,rgb(141, 164, 207),rgb(169, 180, 189)); */
+    background-color: transparent;
+   
+}
+
+.contianer nav{
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    
+}
+
+.contianer nav .fir{
+display: flex;
+justify-content: space-between;
+align-items: start;
+gap: 30px;
+padding: 16px 0;
+}
+#sell{
+    color: white;
+}
+.contianer nav .fir button{
+    background-color: transparent;
+    color: beige;
+    height: 33px;
+    width: 160px;
+    font-weight: bold;
+    box-shadow: -1.8px 3px 3px orange;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.contianer nav .fir a{
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;  
+}
+.contianer nav .fir a:hover{
+    color: teal;
+}
+.contianer nav .fir button:hover{
+    color: purple;
+    transition: 0.3s linear;
+}
+.contianer nav .fir select{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    border-radius: 8px;
+    font-size: 18px;
+    height: 28px;
+    padding: 2px;
+}
+.contianer nav .fir select:hover{
+    color: orange;
+    transition: 0.2s linear ;
+}
+.contianer nav .fir select option{
+    color: yellow;
+    background-color: teal;
+    cursor: pointer;
+}
+.contianer nav .two{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 24px;
+    padding: 4px;
+}
+.contianer nav .two a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-shadow: -1px 2px 4px purple;
+    font-weight: bold;
+
+}
+
+.contianer nav .two img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    /* filter:blur(1px); */
+    border-radius: 40px;
+    padding: 2px 0;
+}
+.contianer nav .two img:hover{
+transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.contianer nav .two a:hover{
+    text-decoration: underline;
+    
+}   
+
+.contianer nav .two .iconone{
+padding: 12px 0;
+cursor: pointer;
+}
+.contianer nav .two .iconone:hover{
+    transform: rotateY(150deg);
+    transition: 0.5s ease-out;
+    
+}
+.contianer nav .two .icontwo{
+   padding: 12px 0; 
+   cursor: pointer;
+
+}
+
+.contianer nav .two .icontwo:hover{
+    transform: skewX(0deg);
+    animation-name: mo;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-delay: 0.1s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes mo{
+    0%{
+        transform: skewX(-20deg);
+    }
+    100%{
+        transform: skewX(20deg);
+    }
+}
+
+
+.contianer .search{
+    height: 80px;
+    padding: 3px 0;
+    
+    width: 100%;
+    background-color: white;
+}
+
+.contianer .search .int{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 0;
+}
+
+
+.contianer .search .int input{
+    height: 55px;
+    border: 0;
+    outline: 0;
+    
+    width: 50%;
+    background-color: transparent;
+    box-shadow: -4px 2px 4px black;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.contianer .search .int input:focus, .contianer .search .int input:invalid{
+    color: rgb(12, 40, 59);
+    padding: 8px;
+    overflow: scroll;
+    
+}
+.contianer .search .int .butone{
+    position: relative;
+    left: -100px;
+}
+
+.contianer .search .int .butone {
+    width: 150px;
+    height: 51px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+}
+.contianer .search .int .butone:hover{
+    background-image: linear-gradient(to right, purple,black);
+    color: white;   
+    transition: 0.9s ease-in-out;
+}
+.contianer .search .int .buttwo{
+    width: 180px;
+    height: 50px;
+    position: relative;
+    left: -100px;
+    background-color: teal;
+    cursor: pointer;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+}
+.contianer .search .int .buttwo:hover{
+        transform: scale(1.08);
+        border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+        transition: 0.4s ease-in;
+        background-color: blue;
+        /* position: relative;
+        left: -70px; */
+}
+.contianer .search .int .buttwo a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.contianer .search .int input::placeholder{
+    padding: 2px;
+}
+
+h1:hover{
+transform: scale(1.3);
+transition: all 0.3s linear;
+}
+.contianer .prodects{
+   
+  display: flex;
+  flex-direction: column;
+
+  gap: 80px;
+    height: 1107px;
+    background-color: transparent;
+    
+}
+
+
+.contianer .prodects .sports{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 12px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    transform: scale(0.81);
+}
+
+
+.contianer .prodects .sports div{
+    height: 540px;
+    width: 390px;
+    background-color: grey;
+    padding: 10px 10px;
+    border-top-left-radius: 38px;
+    border-bottom-right-radius: 38px;
+}
+.contianer .prodects .sports .photo1 img{
+width: 250px;
+}
+.contianer .prodects .sports div img{
+    width: 220px;
+    height: 260px;
+    margin:10px 80px;
+}
+.contianer .prodects .sports div img{
+    cursor: pointer;
+    
+}
+.contianer .prodects .sports div img:hover{
+    /* transform: scale(1.2); */
+    transform: rotateY(180deg);
+    transition: 0.8s ease transform;
+}
+
+
+.contianer .prodects .sports div p{
+    color: white;
+}
+.contianer .prodects .sports div p a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: white;
+    height: 29px;
+    width: 80px;
+    padding: 4px;
+    font-size: 20px;
+}
+
+
+
+
+.contianer .prodects .sports div p del{
+    
+    height: 30px;
+    width: 60px;
+    padding: 8px;
+    background-color: red;
+
+}
+
+
+
+
+.photo1,.photo2,.photo3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.photo1 p,.photo2 p,.photo3 p{
+    font-size: 22px;
+    text-shadow: -1px 2px 3px rgb(11, 19, 16);
+}
+
+
+
+.photo1 a , .photo2 a , .photo3 a{
+    text-decoration: none;
+    color: chartreuse;
+    background-color: black;
+   font-weight: bold;
+    padding: 8px;
+}
+.photo1 a:hover , .photo2 a:hover , .photo3 a:hover{
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.photo3 button{
+    margin: 10px 0px;
+}
+.photo1 button , .photo2 button ,.photo3 button{
+    height: 40px;
+    width: auto;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    background-color: rgb(53, 51, 51);
+    color: rgb(236, 236, 236);
+    font-size: 18px;
+}
+
+.photo1 button:hover , .photo2 button:hover ,.photo3 button:hover{
+    background-color: rgb(46, 22, 75);
+    box-shadow: 2px 4px 3px rgb(137, 216, 247);
+    transition: 0.5s linear all;
+}
+
+del{
+    background-color: red;
+    padding: 3px;
+}
+
+.contianer .prodects .music{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    transform: scale(0.81);
+    padding: 6px 1px;
+}
+
+.contianer .prodects .music div{
+    height: 540px;
+    width: 390px;
+    background-color: grey;
+    padding: 10px 10px;
+    border-top-left-radius: 38px;
+    border-bottom-right-radius: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contianer .prodects .music div img{
+    width: 220px;
+    height: 260px;
+    margin:10px 80px;
+    cursor: pointer;
+}
+
+.contianer .prodects .music div img:hover{
+    transform: rotateY(180deg);
+    transition: 0.8s ease transform;    
+}
+
+
+.contianer .prodects .music div p{
+    color: white;
+    font-size: 22px;
+    text-shadow: -1px 2px 3px rgb(11, 19, 16);
+
+}
+.contianer .prodects .music div a{
+    text-decoration: none;
+    color: chartreuse;
+    background-color: black;
+   font-weight: bold;
+    padding: 8px;
+}
+
+.contianer .prodects .music div a:hover{
+color: white;
+transition: 0.3s ease-in ;
+}
+
+
+.contianer .prodects .music div button{
+    height: 40px;
+    width: auto;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 8px;
+    background-color: rgb(53, 51, 51);
+    color: rgb(236, 236, 236);
+    font-size: 18px;        
+}
+
+.contianer .prodects .music div button:hover{
+background-color: rgb(46, 22, 75);
+box-shadow: 2px 4px 3px rgb(137, 216, 247);
+transition: 0.5s linear all;}
+
+
+
+
+.buttons{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.buttons button{
+    height: 32px;
+width: 120px;
+border: 0;
+outline: 0;
+color: white;
+background-color: rgb(59, 8, 57);
+font-size: 18px;
+cursor: pointer;
+border-radius: 12px;
+}
+
+
+.buttons button:hover{
+    color: black;
+    background-color: white;
+    transition: 0.4s linear;
+    
+}
+
+h1{
+    color: red;
+    cursor: pointer;
+   padding: 5px;
+   margin-top: 5px;
+}
+
+.rr1,.rr2{
+    transform: translate(150deg,150deg);
+}
+@media (min-width:1107px) and (max-width:1400px){
+    .contianer nav {
+        height: 70px;
+    }
+}
+@media (min-width:800px) and (max-width:950px){
+    .contianer nav {
+        height: 70px;
+    }
+}
+
+@media (min-width:950px) and (max-width:1106px){
+    .contianer nav {
+        height: 70px;
+    }
+}
+@media (min-width:950px) and (max-width:1100px) {
+    
+    .contianer nav .fir{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 15px;
+        padding: 16px 0;
+        }
+     
+        .contianer nav .fir button{
+            box-shadow: -2px 2px 4px green;
+            width: 100px;
+        }
+        .contianer nav{
+            width: 100%;
+        }
+       
+}
+
+@media (min-width:800px) and (max-width:950px) {
+    
+    .contianer nav .fir{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 5px;
+        padding: 16px 0;
+        }
+        .contianer nav{
+            width: 100%;
+        }
+        .contianer nav .fir a{
+            font-size: 15px;
+        }
+        .contianer nav .fir select{
+            width: 100px;
+        }
+        .contianer nav .fir button{
+            box-shadow: -2px 2px 4px rgb(39, 150, 158);
+            width: 100px;
+        }
+}
+
+@media (min-width:700px) and (max-width:800px) {
+    
+    .contianer nav .two{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 5px;
+        padding: 16px 0;
+        }
+        .contianer nav{
+            width: 100%;
+            overflow: hidden;
+        }
+        .contianer nav .two img{
+            width: 30px;
+            height: 30px;
+            padding: 3px 15px;
+            border-radius: 50%;
+        }
+        h1{
+            margin: -12px -1px;
+        }
+        .contianer nav .two .rr1{
+            transform: translateX(-44px);
+            width: 35px;
+            height: 35px;
+        }
+        .contianer nav .two .rr2{
+            transform: translateX(-45px);
+            width: 35px;
+            height: 35px;
+        }
+        .contianer nav .two img:hover{
+            transform: scale(1.4);
+        }
+        .contianer nav .two p {
+            font-size: 12px;
+            padding: 1px 15px;
+            transform: translate(-17px,-8px);
+        }
+        .contianer nav .two p a {
+            font-size: 12px;
+           
+        }
+        .contianer nav .fir a{
+            font-size: 15px;
+        }
+        .contianer nav .fir select{
+            width: 100px;
+        }
+        .contianer nav .fir button{
+            box-shadow: -2px 2px 4px rgb(39, 150, 158);
+            width: 100px;
+        }
+}
+
+@media (min-width:600px) and (max-width:700px) {
+    
+    .contianer nav .fir{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 2px;
+        padding: 16px 0;
+        }
+        .contianer nav{
+            width: 100%;
+        }
+        .contianer nav .fir a{
+            font-size: 12px;
+        }
+        .contianer nav{
+            height: 70px;
+        }
+        .contianer nav .fir select{
+            width: 90px;
+        }
+        .contianer nav .fir button{
+            box-shadow: -2px 2px 4px rgb(39, 150, 158);
+            width: 90px;
+        }
+        .contianer nav .two img{
+            width: 33px;
+            height: 33px;
+            padding: 15px 35px;
+            border-radius: 50%;
+            
+        }
+        .contianer nav .two .rr1{
+            margin: 10px 5px;
+            width: 35px;
+            height: 35px;
+        }
+        .contianer nav .two .rr2{
+            transform: translateX(-45px);
+            width: 35px;
+            height: 35px;
+            visibility: hidden;
+        }
+        .contianer nav .two img:hover{
+            transform: scale(1.5);
+        }
+
+        .contianer nav .two p a{
+            font-size: 15px;
+        }
+        .contianer nav .two p{
+            margin: 18px -26px;
+        }
+        h1{
+            margin: 12px 10px;
+        }
+}
+
+
+@media (min-width:450px) and (max-width:600px) {
+    
+    .contianer nav .fir{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 5px;
+        padding: 16px 0;
+        }
+        .contianer nav{
+            width: 100%;
+        }
+        .contianer nav .fir select{
+            width: 70px;
+            font-size: 12px;
+        }
+        h1{
+            visibility: hidden;
+        }
+        .contianer nav .fir a{
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        .contianer nav .fir button{
+            font-size: 11px;
+            width: 20%;
+        }
+        .contianer nav .fir button{
+            box-shadow: -2px 2px 4px rgb(39, 150, 158);
+            width: 100px;
+        }
+        .contianer nav .two img{
+            width: 30px;
+            height: 30px;
+            margin: 12px 14px;
+            
+        }
+        .contianer nav .two img:hover{
+            transform: scale(1.5);
+        }
+        .contianer nav .two p{
+            visibility: hidden;
+        }
+}
+
+@media (min-width:300px) and (max-width:450px) {
+    
+    .contianer nav .fir{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 2px;
+        padding: 16px 0;
+        }
+        body{
+            overflow: hidden;
+        }
+        .contianer nav .fir select{
+            width: 50px;
+            font-size: 9px;
+        }
+        .contianer nav{
+            width: 100%;
+        }
+        .contianer nav .fir a{
+            font-size: 12px;
+            margin-top: 5px;
+            margin-left: 1px;
+            text-shadow: -2px 3px 3px yellow;
+        }
+        .contianer nav .fir a:hover{
+            color: rgb(23, 69, 107);
+            text-shadow: none;
+        }
+        .contianer nav .fir .we{
+            visibility: hidden;
+        }
+        .contianer nav .fir .wee{
+            font-size: 10px;
+            width: 80px;
+            margin: 0px -100px;
+            cursor: pointer;
+            box-shadow: -2px 2px 2px yellow;
+        }
+        .contianer nav .fir button{
+            box-shadow: -2px 2px 4px rgb(39, 150, 158);
+            width: 100px;
+        }
+        .contianer nav .two img{
+            width: 30px;
+            height: 30px;
+            margin: 12px 110px;
+            
+        }
+        .contianer nav .two img:hover{
+            transform: scale(1.5);
+        }
+        .contianer nav .two p{
+            visibility: hidden;
+        }
+}
+
+
+@media (min-width:200px) and (max-width:300px) {
+    
+    .contianer nav .fir{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 2px;
+        padding: 16px 0;
+        
+        }
+        .contianer nav{
+            width: 100%;
+        }
+        .contianer nav .fir select{
+           display: none;
+        }
+        
+        .contianer nav .fir a{
+            font-size: 8px;
+            margin-top: 5px;
+            margin-left: 1px;
+            text-shadow: -2px 3px 3px rgb(62, 38, 167);
+        }
+        .contianer nav .fir a:hover{
+            color: rgb(23, 69, 107);
+            text-shadow: none;
+        }
+        .contianer nav .fir .we{
+            font-size: 10px;
+            width: 80px;
+            margin: 0px 0px;
+            cursor: pointer;
+            box-shadow: -2px 2px 2px rgb(70, 203, 255);
+        }
+        .contianer nav .fir .wee{
+         visibility: hidden;   
+        }
+        .contianer nav .fir button{
+            box-shadow: -2px 2px 4px rgb(39, 150, 158);
+            width: 100px;
+        }
+        .contianer nav .two img{
+            width: 30px;
+            height: 30px;
+            margin: 12px -100px; 
+            
+        }
+        .contianer nav .two img:hover{
+            transform: scale(1.2);
+        }
+        .contianer nav .two p{
+            visibility: hidden;
+        }
+       h1{
+        visibility: hidden;
+       }
+}
+
+
+@media (min-width:220px) and (max-width:250px){
+h1{
+    visibility:visible;
+    transform: translateX(-23px);
+}
+.contianer nav{
+    width: 100%;
+}
+}
+
+
+@media (min-width:250px) and (max-width:300px){
+    .contianer nav .fir{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        gap: 1px;
+        padding: 16px 0;
+        
+        }
+        .contianer nav .fir a{
+            font-size: 12px;
+            margin-top: 5px;
+            margin-left: 1px;
+            text-shadow: -2px 3px 3px rgb(62, 38, 167);
+        }
+        .contianer nav{
+            width: 100%;
+        }
+        .contianer nav .fir .we{
+            font-size: 12px;
+            width: 100px;
+            margin: 0px 0px;
+            cursor: pointer;
+            box-shadow: -2px 2px 2px rgb(70, 203, 255);
+        }   
+}
+
+@media (min-width:265px) and (max-width:300px){
+    .contianer nav .two img:hover{
+        transform: translateX(20px);
+    }
+    .contianer nav .two img{
+        width: 40px;
+        height: 40px;
+        padding-top: 2px;
+    }
+    .contianer nav{
+        width: 100%;
+    }
+}
+
+
+@media (min-width:320px) and (max-width:400px){
+    .contianer nav .fir{
+        display: flex;
+        justify-content: space-between;
+    }
+    .contianer nav{
+        width: 100%;
+    }
+}
+
+
+@media (min-width:525px) and (max-width:570px){
+    .contianer nav .two p{
+        visibility: visible;
+        font-size: 12px;
+    }
+    .contianer nav .two p a{
+        font-size: 10px;
+    }
+    .contianer nav{
+        width: 100%;
+    }
+    }
+
+    @media (min-width:400px) and (max-width:450px){
+        .contianer nav .two p{
+            visibility: visible;
+            font-size: 15px;
+            transform: translateX(-80px);
+        }
+        .contianer nav .two p a{
+            font-size: 12px;
+        }
+        .contianer nav .two img{
+            width: 40px;
+            height: 40px;
+            padding-top: 1px;
+            transform: translateX(12px);
+        }
+        .contianer nav{
+            width: 100%;
+        }
+ }
+        @media (min-width:350px) and (max-width:400px){
+            .contianer nav .two img{
+                width: 40px;
+                height: 40px;
+                padding-top: 1px;
+                transform: translateX(12px);
+            }
+            .contianer nav .two img:hover{
+                transform: scale(1.1);
+            }
+            .contianer nav .two p{
+                visibility: visible;
+                font-size: 10px;
+                transform: translateX(-120px);
+                margin-top: 19px;
+            }
+            .contianer nav .two p a{
+                font-size: 10px;
+                margin-left: 18px;
+            }
+            .contianer nav .two p a span{
+                font-size: 10px;
+                margin-left: 22px;
+            }
+            .contianer nav{
+                width: 100%;
+            }
+        }
+        @media (min-width:350px) and (max-width:360px){
+            .contianer nav .two p{
+                visibility: visible;
+                font-size: 10px;
+                transform: translateX(-120px);
+                margin-top: 19px;
+            }
+            .contianer nav .two p a{
+                font-size: 10px;
+                margin-left: 8px;
+            }
+            .contianer nav .two p a span{
+                font-size: 10px;
+                margin-left: 12px;
+            }
+            .contianer nav .fir select  {
+                border: 1px dashed saddlebrown;
+            }
+            .contianer nav .fir select {
+                cursor: pointer;
+            }
+            .contianer nav .two img:hover{
+                transform: scale(1);
+            }
+        }
+
+        @media (min-width:150px) and (max-width:190px){
+            .contianer nav{
+                width: 100%;
+            }
+        }
+
+        /* {} */
+
+        .contianer nav .fir{
+            width: 100%;
+        }
+        @media (min-width:280px) and (max-width:300px){
+            .contianer nav .two img{
+                width: 40px;
+                height: 40px;
+                padding-top: 1px;
+                transform: translateX(30px);
+            }
+        }
+
+
+        @media (min-width:260px) and (max-width:280px){
+            .contianer nav .two img{
+                width: 40px;
+                height: 40px;
+                padding-top: 1px;
+                transform: translateX(30px);
+            }
+        }
+
+        @media (min-width:240px) and (max-width:260px){
+            .contianer nav .two img{
+               display: none;
+            }
+            .contianer nav .two p{
+                display: none;
+            }
+            h1{
+                transform: translateX(-55px);
+            }
+            .we{
+                transform: translateX(22px);
+            }
+        }
+
+        @media (min-width:220px) and (max-width:240px){
+            
+            .contianer nav .two p{
+                display: none;
+            }
+            .we{
+                display: none;
+            }
+            .contianer nav .fir a{
+                font-size: 15px;
+            } 
+        }
+        @media (min-width:200px) and (max-width:220px){
+            
+           
+            .we{
+               font-style: 12px;
+            }
+            .contianer nav .fir a{
+                display: none;
+            } 
+            .contianer nav .two img{
+                    transform: translateX(40px);
+             }
+        }
+
+
+        @media (min-width:150px) and (max-width:200px){
+            select{
+                display: none;
+            }
+            .contianer nav .fir a{
+                font-style: 10px;
+            }
+
+        }
+
+        @media (min-width:1000px) and (max-width:1100px){
+            .contianer .search .int .butone{
+               transform: translateX(30px);
+            } 
+            .contianer .search .int {
+                display: flex;
+                justify-content: center;
+                gap: 80px;
+            }
+        }
+        @media (min-width:1100px) and (max-width:1107px){
+            .contianer .search .int .butone{
+               transform: translateX(0px);
+            } 
+            .contianer .search .int {
+                display: flex;
+                justify-content: center;
+                gap: 100px;
+            }
+        }
+        @media (min-width:900px) and (max-width:1000px){
+            .contianer .search .int .butone{
+               transform: translateX(44px);
+            } 
+            .contianer .search .int {
+                display: flex;
+                justify-content: center;
+                gap: 80px;
+            }
+            .contianer .search .int input{
+                margin-left: 5px;
+            }
+
+        }
+        @media (min-width:800px) and (max-width:900px){
+            .contianer .search .int .butone{
+               transform: translateX(60px);
+            } 
+            .contianer .search .int {
+                display: flex;
+                justify-content: center;
+                gap: 80px;
+            }
+            .contianer .search .int input{
+                margin-left: 8px;
+            }
+
+        }
+        @media (min-width:700px) and (max-width:800px){
+            .contianer .search .int .butone{
+               transform: translateX(66px);
+            } 
+            .contianer .search .int {
+                display: flex;
+                justify-content: center;
+                gap: 100px;
+            }
+            .contianer .search .int input {
+                margin-left: 8px;
+                width: 100%;
+            }
+            .contianer .search .int .butone {
+                width: 40%;
+            }
+            .contianer .search .int {
+                width: 100%;
+            }
+            .contianer .search .int .buttwo{
+                width: 40%;
+            }
+        }
+        @media (min-width:600px) and (max-width:700px){
+            .contianer .search .int .butone{
+                transform: translateX(40px);
+             } 
+             .contianer .search .int {
+                 display: flex;
+                 justify-content: center;
+                 gap: 80px;
+             }
+             .contianer .search .int input {
+                 margin-left: 8px;
+                 width: 100%;
+                 height: 44px;
+             }
+             .contianer .search .int .butone {
+                 width: 60%;
+                 height: 46px;
+             }
+             .contianer .search .int {
+                 width: 100%;
+             }
+             .contianer .search .int .buttwo{
+                 width: 50%;
+             }
+        }
+
+
+
+
+
+        @media (min-width:500px) and (max-width:600px){
+            .contianer .search .int .butone{
+                transform: translateX(40px);
+             } 
+             .contianer .search .int {
+                 display: flex;
+                 /* justify-content: center;
+                 gap: 120px; */
+                 flex-direction: row;
+                 justify-content: space-between;
+                 align-items: center;
+                 gap: 70px;
+
+             }
+             .contianer .search .int input {
+                 margin-left: 8px;
+                 width: 100%;
+                 height: 44px;  
+                
+             }
+             .contianer .search .int .butone {
+                 width: 60%;
+                 height: 46px;
+             }
+             .contianer .search .int .butone:hover{
+                background: #000;
+                transition: 0.3s linear all;
+             }
+             .contianer .search .int {
+                 width: 100%;
+                 
+             }
+             .contianer .search .int .buttwo{
+                 width: 60%;
+                 height: 44px;
+             }
+             .contianer .search .int .buttwo:hover{
+                background-color: rgb(156, 21, 138);
+             }
+        }
+
+
+        @media (min-width:400px) and (max-width:500px){
+            .contianer .search .int .butone{
+                transform: translateX(50px);
+             } 
+             .contianer .search .int {
+                 display: flex;
+                
+                 flex-direction: row;
+                 justify-content: space-between;
+                 align-items: center;
+                 gap:80px;
+
+             }
+             .contianer .search .int input {
+                 margin-left: 6px;
+                 width: 180px;
+                 height: 44px;  
+                
+             }
+              .contianer .search .int .butone {
+                 height: 38px;
+             } 
+             .contianer .search .int .butone:hover{
+                background: #000;
+                transition: 0.3s linear all;
+             }
+             .contianer .search .int {
+                 width: 100%;
+                 
+             }
+             .contianer .search .int .buttwo{
+                 width: 100%;
+                 height: 40px;
+                
+                 font-style: 12px;
+             }
+             .contianer .search .int .buttwo:hover{
+                background-color: rgb(156, 21, 138);
+             }
+        }
+
+/* body {
+    overflow: hidden;
+ } */
+        @media (min-width:350px) and (max-width:400px){
+             .contianer .search .int .butone{
+                height: 40px;
+                position: relative;
+                left: -10px     ;
+                margin: 18px 16px;
+             }  
+             .contianer .search .int {
+                 display: flex;
+                
+                 flex-direction: row;
+                 justify-content: space-between;
+                 align-items: center;
+                 /* gap:82px; */
+
+             }
+             .contianer .search .int input {
+                 margin-left: 6px;
+                 /* width: 180px; */
+                 width: 80%;
+                 
+                 height: 41px;  
+                
+             }
+             
+             .contianer .search .int .butone:hover{
+                background: #000;
+                transition: 0.3s linear all;
+             }
+             .contianer .search .int {
+                 width: 100%;
+                 
+             }
+             .contianer .search .int .buttwo{
+                 width: 150px;
+                 height: 40px;
+                position: relative;
+                left: -20px;
+                 font-style: 10px;
+             }
+             .contianer .search .int .buttwo:hover{
+                background-color: rgb(156, 21, 138);
+             }
+        }
+
+       
+        @media (min-width:300px) and (max-width:350px){
+            .contianer .search .int .butone{
+               height: 40px;
+               position: relative;
+               left: -10px     ;
+               margin: 18px 16px;
+            }  
+            .contianer .search .int {
+                display: flex;
+               
+                flex-direction: row     ;
+                justify-content: space-between;
+                align-items: center;
+                /* gap:82px; */
+
+            }
+            .contianer .search .int input {
+                margin-left: 6px;
+                /* width: 180px; */
+                width: 80%;
+                
+                height: 41px;  
+               
+            }
+            
+            .contianer .search .int .butone:hover{
+               background: #000;
+               transition: 0.3s linear all;
+            }
+            .contianer .search .int {
+                width: 100%;
+                
+            }
+            .contianer .search .int .buttwo{
+                width: 150px;
+                height: 40px;
+               position: relative;
+               left: -20px;
+                font-style: 10px;
+            }
+            .contianer .search .int .buttwo:hover{
+               background-color: rgb(156, 21, 138);
+            }
+       }
+       @media (min-width:249px) and (max-width:301px){
+        
+        .contianer .search .int {
+            display: flex;
+           
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            /* gap:82px; */
+
+        }
+        .contianer .search .int input{
+            height: 40px;
+            width: 70%;
+            margin-top: -10px;
+            font-weight:600;
+            font-size: 14px;
+        }
+        .contianer .search .int .butone {
+            transform: translateX(100px);
+            width: 40%;
+            font-size: 15px;
+            height: 30px;
+        }
+        .contianer .search .int .buttwo {
+            position: relative;
+            left: 1px;
+            width: 50%;
+            font-weight: 300;
+            font-size: 12px;
+            height: 30px;
+        }
+        
+   }
+   @media (min-width:200px) and (max-width:249px){
+        
+    .contianer .search .int {
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* gap:82px; */
+
+    }
+    .contianer .search .int input{
+        height: 40px;
+        width: 70%;
+        margin-top: -10px;
+        font-weight:600;
+        font-size: 14px;
+    }
+    .contianer .search .int .butone {
+        transform: translateX(100px);
+        width: 40%;
+        font-size: 15px;
+        height: 30px;
+    }
+    .contianer .search .int .buttwo {
+        position: relative;
+        left: 1px;
+        width: 50%;
+        font-weight: 300;
+        font-size: 12px;
+        height: 30px;
+    }
+    
+}
+@media (min-width:150px) and (max-width:200px){
+        
+    .contianer .search .int {
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* gap:82px; */
+
+    }
+    .contianer .search .int input{
+        height: 40px;
+        width: 70%;
+        margin-top: -10px;
+        font-weight:600;
+        font-size: 14px;
+    }
+    .contianer .search .int .butone {
+        transform: translateX(100px);
+        width: 40%;
+        font-size: 15px;
+        height: 30px;
+    }
+    .contianer .search .int .buttwo {
+        position: relative;
+        left: 1px;
+        width: 50%;
+        font-weight: 300;
+        font-size: 12px;
+        height: 30px;
+    }
+    
+}
+        @media (min-width:425px) and (max-width:460px)  {
+            .contianer .search .int .buttwo{
+                color: yellow;
+            }
+        }
+
+
+        @media (min-width:450px) and  (max-width:600px) {
+            .contianer nav{
+                overflow: hidden;
+            }
+        }
+
+
+        @media (min-width:300px) and (max-width:320px) {
+            .contianer nav .two img{
+                transform: translateX(1px);
+            }
+        }
+
+        @media (min-width:320px) and (max-width:349px) {
+            .contianer nav .two p a {
+                font-size: 10px;
+                
+            }
+
+            .contianer nav .two p {
+                transform: translateX(-129px);
+                visibility: visible;
+                font-size: 10px;
+                margin-top: 18px;
+            }
+        }
+
+@media (min-width:1000px) and (max-width:1107px) {
+    .contianer .prodects .sports .photo1,.contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3, .contianer .prodects .music .img1, .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3
+    {
+     width: 300px  
+    }
+    .contianer .prodects .sports , .contianer .prodects .music{
+        gap: 30px;
+    }
+}
+@media (min-width:900px) and (max-width:1000px) {
+    .contianer .prodects .sports .photo1,.contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3, .contianer .prodects .music .img1, .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3
+    {
+     width: 280px ;
+    
+    }
+    .contianer .prodects .sports , .contianer .prodects .music{
+        gap: 30px;
+    }
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img {
+        width: 180px;
+        height: 210px;
+    }
+}
+@media (min-width:800px) and (max-width:900px) {
+    .contianer .prodects .sports .photo1,.contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3, .contianer .prodects .music .img1, .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3
+    {
+     width: 220px ;
+    
+    }
+    .contianer .prodects .sports , .contianer .prodects .music{
+        gap: 30px;
+    }
+    .contianer .prodects .sports .photo1 p,
+    .contianer .prodects .sports .photo2 p,
+    .contianer .prodects .sports .photo3 p,
+    .contianer .prodects .music .img1 p,
+    .contianer .prodects .music .img2 p,
+    .contianer .prodects .music .img3 p {
+        font-size: 18px;
+    }
+    
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img {
+        width: 180px;
+        height: 210px;
+    }
+}
+
+@media (min-width:700px) and (max-width:800px) {
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+     .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3 {
+     width: 180px ;
+    
+    }
+    .contianer .prodects .sports .photo1 button,
+    .contianer .prodects .sports .photo2 button,
+    .contianer .prodects .sports .photo3 button,
+    .contianer .prodects .music .img1 button,
+     .contianer .prodects .music .img2 button,
+    .contianer .prodects .music .img3 button {
+        font-size: 15px;
+    }
+    .contianer .prodects .sports , .contianer .prodects .music{
+        gap: 30px;
+    }
+    .contianer .prodects .sports .photo1 p,
+    .contianer .prodects .sports .photo2 p,
+    .contianer .prodects .sports .photo3 p,
+    .contianer .prodects .music .img1 p,
+    .contianer .prodects .music .img2 p,
+    .contianer .prodects .music .img3 p {
+        font-size: 17px;
+    }
+    
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img {
+        width: 150px;
+        height: 180px;
+    }
+    .contianer .prodects .sports .photo1 {
+        gap: 1px;
+    }
+}
+
+@media (min-width:600px) and (max-width:700px) {
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+     .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3 {
+     width: 160px ;
+    
+    }
+    .contianer .prodects .sports .photo1 button,
+    .contianer .prodects .sports .photo2 button,
+    .contianer .prodects .sports .photo3 button,
+    .contianer .prodects .music .img1 button,
+     .contianer .prodects .music .img2 button,
+    .contianer .prodects .music .img3 button {
+        font-size: 13.5px;
+    }
+    .contianer .prodects .sports , .contianer .prodects .music{
+        gap: 15px;
+    }
+    .contianer .prodects .sports .photo1 p,
+    .contianer .prodects .sports .photo2 p,
+    .contianer .prodects .sports .photo3 p,
+    .contianer .prodects .music .img1 p,
+    .contianer .prodects .music .img2 p,
+    .contianer .prodects .music .img3 p {
+        font-size: 16px;
+    }
+    
+    .contianer .prodects .sports .photo1 img,
+    .contianer .prodects .sports .photo2 img,
+    .contianer .prodects .sports .photo3 img,
+    .contianer .prodects .music .img1 img,
+    .contianer .prodects .music .img2 img,
+    .contianer .prodects .music .img3 img {
+        width: 120px;
+        height: 140px;
+    }
+    .contianer .prodects .sports .photo1 {
+        gap: 1px;
+    }
+}
+@media (min-width:550px) and (max-width:600px) {
+    
+    .contianer .prodects .sports,
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        top: -90px;
+        left: 39px;
+    }
+    .contianer .prodects {
+        height: auto;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+     .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3 {
+     width: 400px ;
+    
+    }
+    .contianer .prodects .music .img3 img {
+        height: 240px;
+    }
+    .contianer .prodects .music .img3 {
+        height: auto;
+        transform: scale(1);
+    }
+    .contianer .prodects .music {
+         position: relative;
+         top: -200px;
+    }
+}
+
+@media (min-width:500px) and (max-width:550px) {
+    
+    .contianer .prodects .sports,
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        top: -90px;
+        left: 19px;
+    }
+    .contianer .prodects {
+        height: auto;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+     .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3 {
+     width: 400px ;
+    
+    }
+    .contianer .prodects .music .img3 img {
+        height: 240px;
+    }
+    .contianer .prodects .music .img3 {
+        height: auto;
+        transform: scale(1);
+    }
+    .contianer .prodects .music {
+         position: relative;
+         top: -200px;
+    }
+}
+
+@media (min-width:450px) and (max-width:500px) {
+    
+    .contianer .prodects .sports,
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        top: -90px;
+        left: 1px;
+    }
+    .contianer .prodects {
+        height: auto;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+     .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3 {
+     width: 400px ;
+    
+    }
+    .contianer .prodects .music .img3 img {
+        height: 240px;
+    }
+    .contianer .prodects .music .img3 {
+        height: auto;
+        transform: scale(1);
+    }
+    .contianer .prodects .music {
+         position: relative;
+         top: -200px;
+    }
+}
+
+
+@media (min-width:400px) and (max-width:450px) {
+    
+    .contianer .prodects .sports,
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        top: -90px;
+        left: 1px;
+    }
+    .contianer .prodects {
+        height: auto;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+     .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3 {
+     width: 400px ;
+    
+    }
+    .contianer .prodects .music .img3 img {
+        height: 240px;
+    }
+    .contianer .prodects .music .img3 {
+        height: auto;
+        
+    }
+    .contianer .prodects .music {
+         position: relative;
+         top: -200px;
+    }
+}
+
+@media (min-width:350px) and (max-width:400px) {
+    
+    .contianer .prodects .sports,
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        top: -90px;
+        left: 0px;
+    }
+    .contianer .prodects {
+        height: auto;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+     .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3 {
+     width: 320px ;
+    
+    }
+    .contianer .prodects .music .img3 img {
+        height: 240px;
+    }
+    .contianer .prodects .music .img3 {
+        height: auto;
+        transform: scale(1);
+    }
+    .contianer .prodects .music {
+         position: relative;
+         top: -200px;
+    }
+}
+@media (min-width:300px) and (max-width:350px) {
+    
+    .contianer .prodects .sports,
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        top: -90px;
+        left: 19px;
+    }
+    .contianer .prodects {
+        height: auto;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+     .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3 {
+     width: 270px ;
+    
+    }
+    .contianer .prodects .music .img3 img {
+        height: 240px;
+    }
+    .contianer .prodects .music .img3 {
+        height: auto;
+        transform: scale(1);
+    }
+    .contianer .prodects .music {
+         position: relative;
+         top: -200px;
+    }
+}
+@media (min-width:250px) and (max-width:300px) {
+    
+    .contianer .prodects .sports,
+    .contianer .prodects .music {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        top: -90px;
+        left: 19px;
+    }
+    .contianer .prodects {
+        height: auto;
+    }
+    .contianer .prodects .sports .photo1,
+    .contianer .prodects .sports .photo2,
+    .contianer .prodects .sports .photo3,
+    .contianer .prodects .music .img1,
+     .contianer .prodects .music .img2,
+    .contianer .prodects .music .img3 {
+     width: 220px ;
+    
+    }
+    .contianer .prodects .music .img3 img {
+        height: 210px;
+    }
+    .contianer .prodects .music .img3 {
+        height: auto;
+        transform: scale(1);
+    }
+    .contianer .prodects .music {
+         position: relative;
+         top: -200px;
+    }
+}
+/* {} */
